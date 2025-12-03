@@ -5,13 +5,14 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-  char Estado[20] = "Amazonas";
-  char cidade[20] = "Manaus";
+  char Estado[20] = "amazonas" ;
+  char cidade[20] = "manaus";
   char códigodacarta[4] = "A01";
-  int população = 2000000;
-  double área = 11.401092;
-  double PIB = 103.281436;
-  int pontosturísticos = 223;
+  int população = 225;
+  double área = 1000;
+  double PIB = 5656;
+  int pontosturísticos = 15;
+
 
   printf("Digite o nome do Estado: \n");
   scanf("%s" , &Estado);
@@ -22,8 +23,8 @@ int main() {
   printf("Digite o códigodacarta: \n");
   scanf("%s" , &códigodacarta);
 
-  printf("Digite a popolação: \n");
-  scanf("%d" , &população);
+  printf("Digite a população: \n");
+  scanf("%f" , &população);
 
   printf("Digite a área: \n");
   scanf("%f" , &área);
@@ -31,19 +32,16 @@ int main() {
   printf("Digite o PIB: \n");
   scanf("%f" , &PIB);
 
-  printf("Digite o pontoturísticos: \n");
+  printf("Digite os pontoturísticos: \n");
   scanf("%d" , &pontosturísticos);
 
-  printf("Estado: %s, cidade %s \n", Estado, cidade);
-  printf("códigodacarta: %s \n", códigodacarta);
-  printf("população: %d, área: %f \n", população, área);
-  printf("PIB: %f, pontosturísticos %d \n", PIB, pontosturísticos);
-
-  
-
-
-
-
+  printf("Estado: %s\n", Estado);
+  printf("cidade: %s\n", cidade);
+  printf("códigodacarta: %s\n", códigodacarta);
+  printf("população: %f\n", população);
+  printf("área: %f\n", área);
+  printf("PIB: %f\n", PIB);
+  printf("pontoturísticos: %d\n", pontosturísticos);
 
   return 0;
 
