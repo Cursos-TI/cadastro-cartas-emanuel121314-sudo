@@ -5,7 +5,7 @@
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
-  char Estado[20] ;
+  char Estado[20] = "Amazonas";
   char cidade[20] = "Manaus";
   char códigodacarta[4] = "A01";
   int população = 2000000;
@@ -34,7 +34,7 @@ int main() {
   printf("Digite o pontoturísticos: \n");
   scanf("%d" , &pontosturísticos);
 
-  printf("Nome do Estado: %s, Nome da cidade %s \n", Estado, cidade);
+  printf("Estado: %s, cidade %s \n", Estado, cidade);
   printf("códigodacarta: %s \n", códigodacarta);
   printf("população: %d, área: %f \n", população, área);
   printf("PIB: %f, pontosturísticos %d \n", PIB, pontosturísticos);
