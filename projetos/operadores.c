@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main(){   
-   
+   unsigned int bignumber;
    float nota1, nota2, nota3;
    float media;
   
+   printf("Digite o valor maior: \n");
+   scanf("%u" , &bignumber);
 
    printf("Digite o primeiro valor:\n" );
    scanf("%f" , &nota1);
