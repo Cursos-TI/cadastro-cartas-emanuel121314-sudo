@@ -25,8 +25,7 @@ int main(){
     float densidadeinversa2;
     float superpoder1;
     float superpoder2;
-    int Calculopopulacao;
-    int resultadopopulção;
+    
 
  
    
@@ -49,7 +48,7 @@ int main(){
     printf("Digite a População: \n");
     scanf("%lu" , &população1);
 
-    printf("Digite a área: \n");
+    printf("Digite a área(km^2): \n");
     scanf("%f" , &area1);
 
     printf("Digite o PIB: \n");
@@ -69,13 +68,13 @@ int main(){
     printf("Nome da cidade: %s \n", cidade1);
     printf("Código da carta: %s \n", codigodacarta1);
     printf("População: %lu \n", população1);
-    printf("Área: %2f \n", area1);
-    printf("PIB: %2f \n", Pib1);
+    printf("Área(km^2): %5.f \n", area1);
+    printf("PIB: %5.f \n", Pib1);
     printf("Pontos turísticos: %d \n", pontosturisticos1);
-    printf("Densidade populacional: %2f\n", densidadepopulacional1);
-    printf("PIB per capita: %2f\n" , pibpercapita1);
-    printf("Densidade inversa: %2f\n", densidadeinversa1);
-    printf("Super poder: %2f\n", superpoder1);
+    printf("Densidade populacional: %5.f\n", densidadepopulacional1);
+    printf("PIB per capita: %5.f\n" , pibpercapita1);
+    printf("Densidade inversa: %5.f\n", densidadeinversa1);
+    printf("Super poder: %5.f\n", superpoder1);
     
 
     
@@ -94,7 +93,7 @@ int main(){
     printf("Digite o código da carta: \n" );
     scanf("%s" , codigodacarta2);
 
-    printf("Digite a População: \n" );
+    printf("Digite a População(km^2): \n" );
     scanf("%lu" , &população2);
 
     printf("Digite a área: \n" );
@@ -115,41 +114,20 @@ int main(){
     printf("Nome da cidade: %s \n", Cidade2);
     printf("Código da carta: %s \n", codigodacarta2);
     printf("População: %lu \n", população2);
-    printf("Área: %2f \n", area2);
-    printf("PIB: %2f \n", Pib2);
+    printf("Área(km^2): %5.f \n", area2);
+    printf("PIB: %5.f \n", Pib2);
     printf("Pontos turísticos: %d \n", pontosturisticos2);
-    printf("Densidade populacional: %2f\n", densidadepopulacional2);
-    printf("PIB per capita: %2f\n" , pibpercapita2);
-    printf("Densidade inversa: %2f \n" , densidadeinversa2);
-    printf("Super poder segunda carta: %2f \n",superpoder2);
+    printf("Densidade populacional: %5.f\n", densidadepopulacional2);
+    printf("PIB per capita: %5.f\n" , pibpercapita2);
+    printf("Densidade inversa: %5.f \n" , densidadeinversa2);
+    printf("Super poder segunda carta: %5.f \n",superpoder2);
 
+    printf("ATRIBUDO PARA COMPARAÇÃO DAS CARTAS:SUPERPODER\n");
 
-
-
-
-    printf("se aparecer 1 a  carta 1 vence, se aparecer 0 a carta 2 vence; \n");
-    printf("comparação das populações: %d \n", população1 > população2 );
-    printf("comparação das áreas: %d \n" , area1 > area2 );
-    printf("comparação dos PIBs: %d \n" ,Pib1 > Pib2);
-    printf("comparação dos pontos turísticos: %d\n" , pontosturisticos1 > pontosturisticos2);
-    printf("Comparação PIB per capita: %d\n", Pib1 > Pib2);
-    printf("Comparação Densidade inversa: %d\n", densidadeinversa1 > densidadeinversa2);
-    printf("comparação super poder: %d\n", superpoder1 > superpoder2);
-    printf("se aparecer 1 a carta 2 vence, se aperecer 0 a carta 1 vence:\n ");
-    printf("comparação das densidades populacionais: %d \n", densidadepopulacional1 > densidadepopulacional2);
-
-
-    
-     return 0;
-
-
-
-
-
-
-
-
-
-
+   if (superpoder1>superpoder2)
+   { printf("carta 1 venceu \n");
+    /* code */
+   } else { printf("carta 2 venceu \n");
+   }
 
 }

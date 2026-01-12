@@ -1,25 +1,35 @@
 #include <stdio.h>
 
 int main(){   
-   unsigned int bignumber;
-   float nota1, nota2, nota3;
-   float media;
-  
-   printf("Digite o valor maior: \n");
-   scanf("%u" , &bignumber);
+  float temperatura, humidade;
+  unsigned int estoque;
+  unsigned int estoqueminimo = 100;
 
-   printf("Digite o primeiro valor:\n" );
-   scanf("%f" , &nota1);
-   printf("Digite o segundo valor: \n ");
-   scanf("%f" , &nota2);
-   printf("Digite o terceiro valor: \n" );
-   scanf("%f" , &nota3);
-   media = (nota1 + nota2 + nota3)/3 - (nota1 + nota2 - nota3);
-   printf("valor da media: %2f", media);
-   return 0;
+  printf("Digite o valor da temperatura: \n");
+  scanf("%f" , &temperatura);
+  printf("Digite o valor da humidade: \n");
+  scanf("%f" , &humidade);
+  printf("Digite o valor do estoque: \n");
+  scanf("%u" , &estoque);
+
+if (temperatura >= 32)
+{ printf ("temperatura esta alta \n");
+}
+else {
+  printf("temperatura esta baixa \n");
+}
+if (humidade > 40)
+{printf("Humidade esta boa \n");
+} 
+else{ printf("humidade esta baixa\n");}
+
+if (estoque<estoqueminimo)
+{printf("estoque esta baixo\n");
+  /* code */
+} 
+else {("estoque esta adequado\n");}
 
 
 
 
-    
 }
