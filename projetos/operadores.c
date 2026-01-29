@@ -1,34 +1,29 @@
 #include <stdio.h>
 
 int main(){   
-  float temperatura, humidade;
-  unsigned int estoque;
-  unsigned int estoqueminimo = 100;
+  int valormarca;
+ 
+  printf("Escolha as marcas do veículos\n");
+  printf("Marca número um, ford\n");
+  printf("Marca número dois, fiat\n");
+  printf("Marca número três, toyota\n");
+  scanf("%d" , &valormarca);
 
-  printf("Digite o valor da temperatura: \n");
-  scanf("%f" , &temperatura);
-  printf("Digite o valor da humidade: \n");
-  scanf("%f" , &humidade);
-  printf("Digite o valor do estoque: \n");
-  scanf("%u" , &estoque);
-
-if (temperatura >= 32)
-{ printf ("temperatura esta alta \n");
-}
-else {
-  printf("temperatura esta baixa \n");
-}
-if (humidade > 40)
-{printf("Humidade esta boa \n");
-} 
-else{ printf("humidade esta baixa\n");}
-
-if (estoque<estoqueminimo)
-{printf("estoque esta baixo\n");
-  /* code */
-} 
-else {("estoque esta adequado\n");}
-
+  switch (valormarca)
+  {
+  case 1: 
+  printf("Marca boa, porém com alto custo de peças\n");
+    break;
+    case 2:
+    printf("Marca boa, peças com baixo custo, porém baixa duração\n");
+    break;
+    case 3:
+    printf("Marca muito boa, peças um pouco mais caras, mas com ótima qualidade\n");
+    break;
+  
+  default:printf("Não temos essa opção\n");
+    break;
+  }
 
 
 
