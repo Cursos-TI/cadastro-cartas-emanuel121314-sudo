@@ -202,5 +202,6 @@ int main(){
         
         default: printf("*** OPÇÃO INVÁLIDA***\n");
     }
+    return 0;
    
 }
