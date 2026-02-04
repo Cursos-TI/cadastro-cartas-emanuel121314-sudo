@@ -24,7 +24,7 @@ int main(){
   default:printf("Não temos essa opção\n");
     break;
   }
-
+ printf("dswwsd\n");
 
 
 }
