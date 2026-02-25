@@ -32,8 +32,7 @@ void moverCavalo(int movimentosRestantes) {
             printf("Opção inválida!\n");
     }
 
-    
-    moverCavalo(movimentosRestantes - 1);
+     moverCavalo(movimentosRestantes - 1);
 }
 
 int main() {
